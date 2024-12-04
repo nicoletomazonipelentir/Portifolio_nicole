@@ -70,12 +70,18 @@ header .social-icons img {
     text-align: center;
     margin-bottom: 2rem;
     color: #22223b; /* Cor do título */
+    font-size: 2rem; /* Tamanho do título */
 }
 
 .projetos-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    display: flex; /* Flexbox para organizar as colunas */
+    justify-content: center; /* Centraliza as colunas */
+    gap: 20px; /* Espaço entre as colunas */
+}
+
+.projeto {
+    width: 300px; /* Largura das colunas */
+    text-align: center; /* Alinha o texto no centro */
 }
 
 .projeto img {
@@ -85,7 +91,7 @@ header .social-icons img {
 }
 
 .projeto p {
-    text-align: center;
+    color: #4a4e69; /* Cor do texto da descrição */
 }
 
 /* Rodapé */
