@@ -1,0 +1,103 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .social-icons a {
+    margin-left: 15px;
+}
+
+header .social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Apresentação */
+#apresentacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+#apresentacao .imagem img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+#apresentacao .texto {
+    flex: 1;
+    padding-left: 2rem;
+}
+
+#apresentacao h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Projetos */
+#projetos {
+    background-color: #fff;
+    padding: 2rem 0;
+}
+
+#projetos h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.projeto img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.projeto p {
+    text-align: center;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer .social-icons a {
+    margin-left: 15px;
+}
+
+footer .social-icons img {
+    width: 30px;
+    height: 30px;
+}
