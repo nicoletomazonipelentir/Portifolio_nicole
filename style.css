@@ -8,7 +8,8 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #e9ecef; /* Cor de fundo */
+    color: #4a4e69; /* Cor do texto */
 }
 
 /* Header */
@@ -56,6 +57,7 @@ header .social-icons img {
 #apresentacao h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
+    color: #22223b; /* Cor do título */
 }
 
 /* Projetos */
@@ -67,6 +69,7 @@ header .social-icons img {
 #projetos h2 {
     text-align: center;
     margin-bottom: 2rem;
+    color: #22223b; /* Cor do título */
 }
 
 .projetos-grid {
