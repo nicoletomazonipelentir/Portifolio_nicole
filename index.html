@@ -6,69 +6,169 @@
     <title>Portfólio Nicole Tomazoni</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="icone-do-site.ico">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/nicole-tomazoni-pelentir/" target="_blank">
-                    <img src="linkedin-icon.png" alt="LinkedIn">
-                </a>
-                <a href="https://medium.com/@nicole.tpelentir_46702" target="_blank">
-                    <img src="medium-icon.png" alt="Medium">
-                </a>
-            </div>
+    <div class="navbar bg-base-100" style="background-color: #e9ecef;">
+        <div class="flex-1">
+          <a class="btn btn-ghost text-xl">Nicole Tomazoni Pelentir</a>
         </div>
-    </header>
+        <div class="flex-2" style="margin-right: 30px;">
+            <a href="https://www.linkedin.com/in/nicole-tomazoni-pelentir/" target="_blank" style="margin-right: 10px;">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
+                    <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+                </svg>
+            </a>
+            <a href="https://medium.com/@nicole.tpelentir_46702" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 64 64">
+                    <path d="M 18.998047 15 A 17.002 17.002 0 0 0 18.998047 49.003906 A 17.002 17.002 0 0 0 18.998047 15 z M 45.498047 16 A 8.502 16.002 0 0 0 45.498047 48.003906 A 8.502 16.002 0 0 0 45.498047 16 z M 58.5 17 A 3.5 15.002 0 1 0 58.5 47.003906 A 3.5 15.002 0 1 0 58.5 17 z"></path>
+                    </svg>
+            </a>
+        </div>
+      </div>
 
     <!-- Apresentação -->
     <section id="apresentacao">
         <div class="container">
             <div class="imagem">
-                <img src="/nicole-perfil.jpg" alt="Sua Foto">
+                <img src="/nicole-perfil.jpg" alt="NA imagem aparece a Nicole" style="width: 300px; height: auto;">
             </div>
+            
             <div class="texto">
-                <h2>Olá, eu sou [Seu Nome]</h2>
-                <p>Eu sou [uma breve descrição sobre você, suas habilidades, experiência e interesses].</p>
+                <h2>Olá, eu sou a Nicole</h2>
+                <p style="text-align: justify;">Estudante de Ciência da Computação, leitora voraz, instigada pela curiosidade e pelo desejo constante de aprender (bem nerdzinha). Sou analista de dados com foco em Python, SQL, DAX, Power BI e processos de ETL, além de experiência em modelagem de dados e storytelling. Tenho forte pensamento analítico, resolução de problemas e habilidades de comunicação, apoiados por organização e adaptabilidade. Meu trabalho inclui análises estatísticas e apresentação de resultados claros com Excel e PowerPoint. Quer conversar? Me chama na DM ou pelo e-mail nicole.tpelentir@gmail.com!</p>
             </div>
         </div>
     </section>
+    <div class="divider"></div>
+<!-- habilidades -->
+<section id="habilidades">
+    <div class="habilidades-container">
+      <div class="habilidade-card">
+        <div class="row">
+            <div class="icon col-3">
+            <img src="/codigo.png" alt="Tela com código"></div>
+            <h3 class="col-7 text-nowrap">Habilidades de Programação</h3>
+        </div>
+          <ul>
+                <li>Python</li>
+                <li>Git e Github</li>
+            </ul>
+        </div>
+        <div class="habilidade-card">
+            <div class="row">
+            <div class="icon col-3">
+              <img src="/grafico.png" alt="Tela com gráfico">
+            </div>
+            <h3  class="col-7 text-nowrap">Análise de Dados</h3></div>
+            <ul>
+              <li>SQL</li>
+              <li>ETL (Extração, Transformação e Carga)</li>
+              <li>DAX (criação de medidas e colunas calculadas)</li>
+              <li>Storytelling para Dados</li>
+              <li>Data Mining</li>
+              <li>Power BI</li>
+            </ul>
+          </div>
+          
+        <div class="habilidade-card">
+            <div class="row">
+          <div class="icon col-4"><img src="/soft.png" alt="Soft skill"></div>
+          <h3 class="col-6 text-nowrap">Soft Skills</h3></div>
+          <ul>
+            <li>Comunicação Eficaz</li>
+            <li>Proatividade</li>
+            <li>Visão Estratégica</li>
+            <li>Adaptabilidade</li>
+            <li>Organização</li>
+            <li>Resolução de Problemas</li>
+        </ul>
+        </div>
+        <div class="habilidade-card">
+            <div class="row">
+          <div class="icon col-3"><img src="/estrela.png" alt="Estrela"></div>
+          <h3 class="col-6 text-nowrap">Conteúdo Extra</h3></div>
+          <ul>
+            <li>Estatística</li>
+            <li>Inglês B2</li>
+            <li>Marketing Digital</li>
+            <li>CRM</li>
+        </ul>
+        </div>
+      </div>
 
+ <div class="divider"></div>
     <!-- Projetos -->
-    <section id="projetos">
-        <div class="container">
-            <h2>Meus Projetos</h2>
-            <div class="projetos-grid">
-                <div class="projeto">
-                    <img src="projeto1.jpg" alt="Projeto 1">
-                    <p>Descrição do Projeto 1</p>
+    <section>
+    <div class="container">
+        
+        <div class="projetos-grid">
+            <div class="card bg-base-100 w-50 shadow-xl">
+                <figure>
+                  <img
+                    src="/data-girls.png"
+                    alt="Projeto data girls" />
+                </figure>
+                <div class="card-body" style="background-color: #e9ecef;;">
+                  <h4 class="card-title">
+                   Análise de Dados State of Data Brasil
+                  </h4>
+                  <p style="text-align: left;">O "State of Data Brazil 2023", é uma base de dados que busca reunir informações dos profissionais da área de dados e disponibilizá-las para que a comunidade desfrute e crie análises desses dados conforme desejar. Inspirada por isso, a comunidade Data Girls escolheu essa base de dados como desafio final da segunda edição do seu bootcamp Recomeçar. As participantes desse bootcamp foram divididas em grupos de quatro pessoas para realizarem essa análise final, que juntas devem explorar os dados e trazer insights, utilizando os conhecimentos adquiridos ao longo do bootcamp.</p>
                 </div>
-                <div class="projeto">
-                    <img src="projeto2.jpg" alt="Projeto 2">
-                    <p>Descrição do Projeto 2</p>
+              </div>
+              <div class="card bg-base-100 w-50 shadow-xl">
+                <figure>
+                  <img
+                    src="/ancine.png"
+                    alt="Projeto ancine" />
+                </figure>
+                <div class="card-body" style="background-color: #e9ecef;;">
+                  <h4 class="card-title">
+                    Análise de Dados da Ancine
+                  </h4>
+                  <p style="text-align: left;">Você já reparou nas aberturas icônicas de filmes, como o castelo da Disney ou o rugido do leão da MGM? Com o intuito de aprofundar minha compreensão sobre o cenário cinematográfico brasileiro, utilizei dados da Ancine (Agência Nacional do Cinema) para desenvolver uma análise das distribuidoras de filmes. Esse projeto não só reflete minha paixão pelo cinema, mas também busca explorar as dinâmicas e tendências do setor. Estou animado para compartilhar mais sobre essa jornada!
+                </p>
                 </div>
-                <div class="projeto">
-                    <img src="projeto3.jpg" alt="Projeto 3">
-                    <p>Descrição do Projeto 3</p>
+              </div>
+              <div class="card bg-base-100 w-50 shadow-xl">
+                <figure>
+                  <img
+                    src="/spotify.png"
+                    alt="Projeto spotify" />
+                </figure>
+                <div class="card-body" style="background-color: #e9ecef;;">
+                  <h4 class="card-title">
+                    Clusterização dos dados do Spotify
+                  </h4>
+                  <p style="text-align: left;">O projeto consistiu na criação de um software de recomendações musicais baseado em uma base de dados clusterizada, com o objetivo de ajudar usuários a descobrir novos artistas em seus gêneros favoritos. Utilizando o algoritmo KMeans do sklearn, foram criados 80 clusters a partir de 112 gêneros musicais, número escolhido por reduzir a complexidade dos dados e melhorar a identificação de padrões. Esse agrupamento facilitou a segmentação de grandes volumes de dados e possibilitou a personalização eficiente das recomendações, com base em uma base de dados do Kaggle.</p>
                 </div>
-            </div>
+              </div>
         </div>
-    </section>
-
+    </div>
+</section>
     <!-- Rodapé -->
     <footer>
+        
         <div class="container">
             <p>Email: nicole.tpelentir@gmail.com</p>
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/nicole-tomazoni-pelentir/" target="_blank">
-                    <img src="linkedin-icon.png" alt="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
+                        <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+                    </svg>
                 </a>
                 <a href="https://medium.com/@nicole.tpelentir_46702" target="_blank">
-                    <img src="medium-icon.png" alt="Medium">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 64 64">
+                        <path d="M 18.998047 15 A 17.002 17.002 0 0 0 18.998047 49.003906 A 17.002 17.002 0 0 0 18.998047 15 z M 45.498047 16 A 8.502 16.002 0 0 0 45.498047 48.003906 A 8.502 16.002 0 0 0 45.498047 16 z M 58.5 17 A 3.5 15.002 0 1 0 58.5 47.003906 A 3.5 15.002 0 1 0 58.5 17 z"></path>
+                    </svg>
                 </a>
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

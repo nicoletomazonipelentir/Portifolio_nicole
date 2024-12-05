@@ -62,36 +62,34 @@ header .social-icons img {
 
 /* Projetos */
 #projetos {
-    background-color: #fff;
-    padding: 2rem 0;
-}
-
-#projetos h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-    color: #22223b; /* Cor do título */
-    font-size: 2rem; /* Tamanho do título */
+    text-align: center; /* Centraliza o título */
 }
 
 .projetos-grid {
-    display: flex; /* Flexbox para organizar as colunas */
-    justify-content: center; /* Centraliza as colunas */
-    gap: 20px; /* Espaço entre as colunas */
+    display: flex; /* Alinha os projetos na horizontal */
+    flex-direction: row; /* Define a direção horizontal */
+    justify-content: center; /* Centraliza os projetos horizontalmente */
+    gap: 20px; /* Espaço entre os projetos */
 }
 
 .projeto {
-    width: 300px; /* Largura das colunas */
-    text-align: center; /* Alinha o texto no centro */
+    display: flex;
+    flex-direction: column; /* Alinha imagem e texto na mesma coluna */
+    align-items: center; /* Centraliza a imagem e o texto */
 }
 
 .projeto img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 10px;
+    width: 150px; /* Ajuste o tamanho da imagem */
+    height: auto; /* Mantém a proporção */
 }
 
 .projeto p {
-    color: #4a4e69; /* Cor do texto da descrição */
+    margin-top: 10px; /* Espaço entre a imagem e o texto */
+    text-align: center; /* Centraliza o texto */
+}
+
+.card{
+    margin-right: 30px;
 }
 
 /* Rodapé */
@@ -102,11 +100,114 @@ footer {
     text-align: center;
 }
 
-footer .social-icons a {
-    margin-left: 15px;
+
+.social-icons {
+    display: flex; /* Exibe os itens lado a lado */
+    gap: 10px; /* Espaçamento entre os ícones */
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    align-items: center; /* Centraliza os ícones verticalmente */
 }
 
-footer .social-icons img {
-    width: 30px;
-    height: 30px;
+.social-icons a {
+    text-decoration: none; /* Remove o sublinhado do link */
 }
+
+.social-icons svg {
+    fill: #000; /* Cor dos ícones (pode alterar para outra cor) */
+    transition: transform 0.2s, fill 0.2s; /* Adiciona transições suaves */
+}
+
+.social-icons a:hover svg {
+    transform: scale(1.1); /* Aumenta ligeiramente o ícone ao passar o mouse */
+    fill: #0077b5; /* Cor ao passar o mouse (exemplo: azul do LinkedIn) */
+}
+/* Seção Habilidades */
+#habilidades {
+    padding: 2rem 0;
+    background-color: #e9ecef; /* Cor de fundo similar ao resto do site */
+    text-align: center; /* Centraliza o título */
+}
+
+.habilidades-container {
+    display: grid; /* Usa grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Define 2 colunas */
+    gap: 20px; /* Espaçamento entre os cards */
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza a grade */
+    padding: 20px;
+}
+
+.habilidade-card {
+    background: #fff; /* Fundo branco */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    padding: 20px;
+    text-align: center; /* Centraliza o conteúdo */
+    transition: transform 0.3s ease;
+}
+
+.habilidade-card:hover {
+    transform: translateY(-5px); /* Efeito ao passar o mouse */
+}
+
+.habilidade-card .icon {
+    font-size: 40px; /* Tamanho do ícone */
+    color: #4caf50; /* Cor do ícone */
+    margin-bottom: 10px;
+}
+
+.habilidade-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #22223b; /* Cor do título */
+}
+
+.habilidade-card p {
+    font-size: 14px;
+    color: #4a4e69; /* Cor do texto */
+}
+/* Ajuste para alinhar título e imagem na mesma linha */
+.habilidade-card {
+    display: flex;
+    flex-direction: column; /* Organiza a imagem, título e lista em coluna */
+    align-items: flex-start; /* Alinha todos os itens à esquerda */
+    background: #fff; /* Fundo branco */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    padding: 20px;
+    text-align: left; /* Alinha o texto à esquerda */
+    transition: transform 0.3s ease;
+}
+
+.habilidade-card:hover {
+    transform: translateY(-5px); /* Efeito ao passar o mouse */
+}
+
+/* Alinhar a imagem e o título na mesma linha */
+.habilidade-card .icon {
+    display: flex; /* Coloca a imagem e o título na mesma linha */
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px; /* Espaçamento entre a imagem e o título */
+}
+
+.habilidade-card img {
+    width: 40px; /* Tamanho da imagem */
+    height: 40px; /* Tamanho da imagem */
+    margin-right: 10px; /* Espaço entre imagem e título */
+}
+
+.habilidade-card h3 {
+    font-size: 18px;
+    color: #22223b; /* Cor do título */
+    margin: 0; /* Remove margens padrão */
+}
+ul {
+    list-style-type: disc !important; /* Força as bolinhas */
+    padding-left: 20px;
+    margin: 0;
+  }
+  li {
+    display: list-item; /* Certifique-se de que os itens são do tipo lista */
+  }
+
