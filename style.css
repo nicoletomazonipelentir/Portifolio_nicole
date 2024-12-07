@@ -218,3 +218,24 @@ ul {
 h3{
     text-decoration: solid;
 }
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.4rem;
+}
+h5 {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+}
+h6 {
+    font-size: 0.875rem;
+    margin-bottom: 0.2rem;
+}
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
