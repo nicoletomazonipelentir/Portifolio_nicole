@@ -54,10 +54,8 @@ header .social-icons img {
     padding-left: 2rem;
 }
 
-#apresentacao h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #22223b; /* Cor do título */
+h2{
+    color: #22223b;
 }
 
 /* Projetos */
@@ -99,7 +97,12 @@ footer {
     padding: 1rem 0;
     text-align: center;
 }
-
+.experiencia{
+    text-align: left;
+}
+.experiencia h2{
+    text-align: center;
+}
 
 .social-icons {
     display: flex; /* Exibe os itens lado a lado */
@@ -158,13 +161,15 @@ footer {
 
 .habilidade-card h3 {
     margin: 10px 0;
-    font-size: 18px;
     color: #22223b; /* Cor do título */
 }
 
 .habilidade-card p {
     font-size: 14px;
     color: #4a4e69; /* Cor do texto */
+}
+.projetos-grid{
+    margin-bottom: 20px;
 }
 /* Ajuste para alinhar título e imagem na mesma linha */
 .habilidade-card {
@@ -194,21 +199,22 @@ footer {
 .habilidade-card img {
     width: 40px; /* Tamanho da imagem */
     height: 40px; /* Tamanho da imagem */
-    margin-right: 10px; /* Espaço entre imagem e título */
+    margin-left: 20px;
 }
 
 .habilidade-card h3 {
-    font-size: 18px;
     color: #22223b; /* Cor do título */
     margin: 0; /* Remove margens padrão */
 }
 ul {
     list-style-type: disc !important; /* Força as bolinhas */
-    padding-left: 20px;
-    margin: 0;
+    padding-left: 10px;
   }
   
   li {
     display: list-item; /* Certifique-se de que os itens são do tipo lista */
+    margin-left: 20px;
   }
-
+h3{
+    text-decoration: solid;
+}
