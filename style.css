@@ -239,3 +239,16 @@ p {
     line-height: 1.5;
     margin-bottom: 1rem;
 }
+.projetos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaçamento entre os elementos */
+}
+
+.card {
+    width: 48%; /* Ou outro valor para ajustar a largura dos cards */
+}
+
+.card:last-child {
+    width: 100%; /* Faz o último card ocupar toda a linha */
+}
