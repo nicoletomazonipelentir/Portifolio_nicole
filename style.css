@@ -252,3 +252,12 @@ p {
 .card:last-child {
     width: 100%; /* Faz o último card ocupar toda a linha */
 }
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+    gap: 20px; /* Espaçamento entre os cards */
+}
+
+.card:last-child {
+    grid-column: span 2; /* Faz o último card ocupar uma linha inteira */
+}
