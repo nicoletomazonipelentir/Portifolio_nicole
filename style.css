@@ -63,12 +63,6 @@ h2{
     text-align: center; /* Centraliza o título */
 }
 
-.projetos-grid {
-    display: flex; /* Alinha os projetos na horizontal */
-    flex-direction: row; /* Define a direção horizontal */
-    justify-content: center; /* Centraliza os projetos horizontalmente */
-    gap: 20px; /* Espaço entre os projetos */
-}
 
 .projeto {
     display: flex;
@@ -239,25 +233,26 @@ p {
     line-height: 1.5;
     margin-bottom: 1rem;
 }
-/* .projetos-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* Espaçamento entre os elementos */
-}
 
-.card {
-    width: 48%; /* Ou outro valor para ajustar a largura dos cards */
-}
-
-.card:last-child {
-    width: 100%; /* Faz o último card ocupar toda a linha */
-}
 .projetos-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
-    gap: 20px; /* Espaçamento entre os cards */
+    display: flex; /* Alinha os projetos na horizontal */
+    flex-direction: row; /* Define a direção horizontal */
+    justify-content: center; /* Centraliza os projetos horizontalmente */
+    flex-wrap: wrap; /* Permite que os elementos "quebrem" para a próxima linha */
+    gap: 20px; /* Espaço entre os projetos */
 }
 
-.card:last-child {
-    grid-column: span 2; /* Faz o último card ocupar uma linha inteira */
-} */
+.projetos-grid .card {
+    flex: 1 1 calc(48% - 20px); /* Define largura dinâmica para caber dois cards por linha */
+    max-width: 48%; /* Limita a largura máxima */
+}
+
+.projetos-grid .card.last-card {
+    flex: 1 1 100%; /* Faz o último card ocupar 100% da linha */
+    max-width: 100%; /* Garante que ele ocupe toda a linha */
+}
+
+
+
+
+
