@@ -239,7 +239,7 @@ p {
     line-height: 1.5;
     margin-bottom: 1rem;
 }
-.projetos-grid {
+/* .projetos-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 20px; /* Espaçamento entre os elementos */
@@ -260,4 +260,4 @@ p {
 
 .card:last-child {
     grid-column: span 2; /* Faz o último card ocupar uma linha inteira */
-}
+} */
